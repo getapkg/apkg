@@ -44,6 +44,8 @@ install_parser.add_argument("package", help="Name of the package to install")
 remove_parser = subparsers.add_parser("remove", help="Remove a package")
 remove_parser.add_argument("package", help="Name of the package to remove")
 
+apkgupdate_parser = subparsers.add_parser("apkg-update", help="Update APKG")
+
 args = parser.parse_args()
 
 # -------------------------------
